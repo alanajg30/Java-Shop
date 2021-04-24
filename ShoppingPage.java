@@ -80,5 +80,14 @@ public class ShoppingPage implements ActionListener {
             frame.dispose();
             AddItemPage openItemPage = new AddItemPage(ShoppingList);
         }
+        JButton logoutButton = new JButton("Logout");
+        logoutButton.setBounds(90, 90, 10, 30);
+        frame.add(logoutButton);
+        
+        public void actionPerformed(ActionEvent e) {
+         if(e.getSource() == logoutButton) {
+           LoginScreen loginScreen = new LoginScreen();  
+         }
+        }
     }
 }
